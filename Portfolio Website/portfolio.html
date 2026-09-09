@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Selected portfolio work by Elliott Davies."
+    />
+    <title>Elliott Davies — Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="site-background">
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="index.html">Elliott Davies</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="primary-menu">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link is-active" href="portfolio.html" aria-current="page">Portfolio</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="portfolio container">
+      <section class="page-intro" aria-labelledby="portfolio-title">
+        <p class="eyebrow">Selected work</p>
+        <h1 id="portfolio-title">The work<br /><span>speaks.</span></h1>
+        <p class="page-summary">
+          A starting point for projects, collaborations, and ideas worth making real.
+        </p>
+      </section>
+
+      <!-- Manual video list for now; automatic new-upload syncing can be added later. -->
+      <section class="video-section" id="video" aria-labelledby="video-title">
+        <div class="video-heading">
+          <p class="eyebrow">Behind the mix</p>
+          <h2 id="video-title">Watch the<br /><span>process.</span></h2>
+        </div>
+        <div class="video-grid" data-video-grid aria-label="Behind the mix videos"></div>
+      </section>
+
+      <section class="project-grid" data-portfolio-grid aria-label="Portfolio projects">
+        <noscript>
+          <p class="project-grid-message">Please enable JavaScript to view the portfolio projects.</p>
+        </noscript>
+      </section>
+
+      <section class="audio-section" id="audio" aria-labelledby="audio-title">
+        <div class="audio-heading">
+          <p class="eyebrow">Listen in</p>
+          <h2 id="audio-title">Selected<br /><span>audio.</span></h2>
+        </div>
+        <div class="audio-player-card" data-audio-player>
+          <audio data-audio-element preload="metadata"></audio>
+          <div class="audio-now-playing">
+            <span class="audio-kicker">Now playing</span>
+            <strong data-audio-title>Select a track</strong>
+            <span data-audio-role>Placeholder audio ready for your files</span>
+          </div>
+          <div class="audio-controls">
+            <button class="audio-play" type="button" data-audio-play aria-label="Play selected track">
+              <span data-audio-play-icon aria-hidden="true">▶</span>
+            </button>
+            <div class="audio-timeline">
+              <input data-audio-progress type="range" min="0" max="100" value="0" step="0.1" aria-label="Audio progress" />
+              <div class="audio-time">
+                <span data-audio-current>0:00</span>
+                <span data-audio-duration>0:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="audio-track-list" data-audio-track-list aria-label="Audio tracks"></div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Reusable CTA partial: copy this entire section into other pages before the footer. -->
+    <section class="cta-band" id="contact" aria-labelledby="cta-title">
+      <div class="cta-content container">
+        <p class="eyebrow">Make something worth hearing</p>
+        <h2 id="cta-title">Got a track<br /><span>or an idea?</span></h2>
+        <p class="cta-copy">Let’s talk about mixing, mastering, or a production collaboration.</p>
+        <a class="cta-button" href="mailto:eedavies@student.fullsail.edu">
+          Let's try now <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer container">
+      <span>© <span data-year></span> Elliott Davies</span>
+      <a href="index.html">Back home ↗</a>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
