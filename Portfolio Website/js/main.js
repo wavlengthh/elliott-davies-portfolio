@@ -58,6 +58,7 @@ const renderVideos = () => {
               src="https://www.youtube-nocookie.com/embed/${id}"
               title="${caption}"
               loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
