@@ -12,11 +12,11 @@ const portfolioItems = [
 ];
 
 const videos = [
-  { id: "VIDEO_ID_1", caption: "A look inside a mix session." }
+  { id: "CMmuctaTKm8", caption: "A look inside a mix session." }
 ];
 
 const audioTracks = [
-  { title: "Neon Hours", role: "Mixed & Mastered", src: "assets/audio/track1.mp3" },
+  { title: "Neon Hours", role: "Mixed & Mastered", src: "assets/audio/ElliottDavies_NeonNours_Mastering Session 2026.9.mp3" },
   { title: "Open Frequency", role: "Original Production", src: "assets/audio/track2.mp3" },
   { title: "Static Heart", role: "Mixed & Mastered", src: "assets/audio/track3.mp3" }
 ];
